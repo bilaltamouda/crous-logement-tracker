@@ -16,4 +16,5 @@ RUN pip install --no-cache-dir \
 COPY . .
 
 # Heroku sets PORT at runtime
-CMD python main.py --web
+CMD gunicorn web:app --bind 0.0.0.0:10000
+
