@@ -32,4 +32,4 @@ HEROKU_APP_NAME: str = os.getenv("HEROKU_APP_NAME", "")
 WEB_PASSWORD: str = os.getenv("WEB_PASSWORD", "")
 
 # Port for the web server (Heroku sets this automatically)
-PORT: int = int(os.getenv("PORT", "5000"))
+PORT: int = int(os.getenv("PORT", "10000"))
